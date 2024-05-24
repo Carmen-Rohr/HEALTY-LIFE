@@ -1,0 +1,523 @@
+
+/* ******************************************************************
+Estilo de index.html
+**********************************************************************/
+
+
+@media screen and (max-width: 1200px) {
+   
+    aside{
+        display: none;
+    }
+    .listaMenu{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;    
+    }
+    .itemMenu
+    {
+        padding: 5px;
+    }
+    
+        }
+@media screen and (max-width: 560px) {
+  
+    body > main > section > div.articulo.articulo2 > div > a > img{
+        width: 13rem ;
+        height: 13rem ;
+
+    }
+    a {
+        color:white;
+    }
+    
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E7F2D5;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    padding:10px;
+    height: auto;
+}
+
+
+
+section{
+    width:80%;
+    background-color:#E7F2D5;
+}
+
+.articulo{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    height: auto;
+    background-color: #C7D989;
+    border-radius: 5px;
+ 
+}
+.articulo h2{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+.organo {        
+    align-content:space-between;
+    margin-left:2%;
+    margin-bottom: 1%;   
+}
+
+.organo img {
+    width:4rem;
+    height: 4rem;
+}
+
+.articulo2 {
+ display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+    height: auto;
+    background-color: #C7D989;
+    border-radius: 5px;    
+}
+
+
+
+.actFisica {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin:1rem;
+}
+.actFisica img {
+    width:20rem;
+    height:20rem;   
+}
+
+.actFisica h3 {
+    text-align: center;
+    padding: 15px;
+}
+
+body > main > section > div:nth-child(1) > h2 {   
+   text-align: center;
+}
+
+
+aside{
+    width:20%;
+    background-color:#E7F2D5;
+    margin: 10px;      
+    padding: 10px;
+    padding-top: 100px;
+    background-color: #C7D989;        
+}
+
+.aside{
+    margin: 10px;
+    padding: 10px;   
+    background-color: #C7D989;
+    border-radius: 5px;
+    height:90%;
+
+    /* Animación */
+    animation-name: cambiarImagen;
+    animation-duration: 20s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cambiarImagen {
+    0% {background-image: url(./imgs/consejo1.jpg); background-repeat: no-repeat; background-size: 100% 80%;}     
+    25% {background-image: url(./imgs/consejo2.jpg); background-repeat: no-repeat; background-size: 100% 80%;} 
+    50% {background-image: url(./imgs/consejo3.jpg); background-repeat: no-repeat; background-size: 100% 80%;}
+    75% {background-image: url(./imgs/consejo4.jpg); background-repeat: no-repeat; background-size: 100% 80%;}
+    100% {background-image: url(./imgs/consejo5.jpg); background-repeat: no-repeat; background-size: 100% 80%;}   
+}   
+
+
+
+
+/* ******************************************************************
+Estilo del header
+**********************************************************************/
+header
+{
+    background-image: url(./imgs/fondo.jpeg);   
+    background-size: cover;             
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#logo_nav{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    align-items: left;
+}
+
+.logo{
+    width:100%;
+    height: 20%;
+    margin-left: 15%;
+    margin-top: 15%;
+}
+
+.listaMenu{     
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+
+.itemMenu{
+    display: inline;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;   
+    color: #191919; 
+ /*  color: #730237;*/
+}
+
+.itemMenu:hover a {
+    color:#730237;
+    background-color: #C7D989;
+    font-size: 30px;
+    
+}
+
+
+.fondo {
+    background-image: url(./imgs/fondo.jpeg);
+    background-image: opacity(0.1);
+    display: flex;
+    justify-content:flex-start;
+}
+
+/* ******************************************************************
+Estilo del footer
+**********************************************************************/
+footer{
+width: 100%;
+height: auto;
+color:#191919;
+background-color: #C7D989;
+padding: 10px 0;
+text-align: center;
+display: flex;
+flex-direction: row;
+justify-content:space-evenly;
+}
+
+footer >ul{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.redes{
+    font-size: 1.5em;   
+    padding-right: 1.5em;
+    color:#730237;
+}
+
+/* ******************************************************************
+Estilo de alimentacion.html
+**********************************************************************/
+@media screen and (max-width: 900px) {
+    .alimentacion{
+        display:grid;
+        grid-template-areas: "tituloAlimentacion"
+                             "receta"
+                             "imagenReceta"
+                             "info" !important;
+        justify-content: center;
+       
+
+    }
+}
+.tituloAlimentacion{
+    grid-area: tituloAlimentacion;  
+    text-align: center;
+}
+
+.receta{
+    grid-area: receta;
+    margin-left: 10%;
+    text-align: justify; 
+
+}
+
+.imagenReceta{
+    grid-area: imagenReceta;    
+}
+
+.consejos{
+    grid-area: consejos;
+}
+
+.valorNutritivo{
+    grid-area: valorNutritivo;
+    margin-right: 5%;
+}
+
+.graficoCalorico{
+    grid-area: graficoCalorico;   
+    
+}
+
+.valorNutritivo img {
+    width:100%;
+    height: 100%;
+}
+
+.graficoCalorico img {
+    width:100%;
+    height: 100%;
+}
+
+.alimentacion {
+    display: grid;
+
+    grid-template-areas: "tituloAlimentacion tituloAlimentacion tituloAlimentacion tituloAlimentacion"
+                         "receta receta imagenReceta imagenReceta"
+                         "receta receta info info"  
+                          "receta receta info info";
+   
+    
+    background-color:#E7F2D5;   
+    width: 100%;
+    margin-left: 5%;
+}
+
+.info{
+   display:grid;
+   grid-template-areas: "consejos consejos"
+                        "valorNutritivo graficoCalorico"; 
+    background-color:#C7D989;
+    padding: 5%;
+    border-radius: 10px; 
+    width: 95%;
+    margin-top:2%;
+    text-align: justify; 
+}
+
+.imagenReceta img {
+    border-radius: 10px; 
+}
+
+span {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.tituloPreparacion {
+    margin-top: 5%;
+}
+
+.preparacion li, .consejos li, .ingredientes li {
+    padding:2%;
+}
+
+.alternativa {
+    background-color:#C7D989;
+    padding: 5%;
+    border-radius: 10px;
+    margin-top: 5%
+}
+
+.consejos h3 {
+    text-align: center; 
+}
+
+
+/* ******************************************************************
+Estilo de nosotros.html
+**********************************************************************/
+.nosotros {
+    width:100%;
+    padding: 2%;
+    margin:2%;    
+    border-radius: 10px;
+    text-align: justify;   
+}
+
+.nosotros h2 {
+    text-align: center;   
+    margin: 2% 0;
+}
+
+.nutricionista, .trainers, .productos {
+    padding: 2%;
+    margin: 2% 0;
+}
+
+.nutricionista ul, .trainers p,.productos p {
+    padding: 2%;
+}
+
+.botonNosotros {
+    background-color: #C7D989;  
+    text-align: center;
+    width: 20%;
+    height: 20%;
+    border-radius: 5px;
+    border: 1px solid #730237;
+    color: #730237;
+    font-size: 1.2em;    
+    padding: 0.5%;    
+}   
+
+.botonNosotros:hover {
+    background-color: #730237;
+    border: 1px solid #C7D989;
+    color: #C7D989;
+    cursor:pointer
+
+
+}
+
+
+/* ******************************************************************
+Estilo de formulario.html
+**********************************************************************/
+@media screen and (max-width: 900px){
+    
+
+    .formularioMain{         
+        display: flex;
+       
+        justify-content: center;
+        margin: 10px;
+        padding: 10px;
+        height: auto;
+        background-color: #E7F2D5;
+        border-radius: 5px;
+    }
+}
+
+.formularioMain {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+fieldset {
+    margin-left: 15%;
+    margin-bottom: 1%;
+    padding: 5%;
+    width: 120%;
+    font-size: 1.2em;  
+}
+
+.tituloFormulario {
+    text-align: center;  
+    padding: 2%;
+    text-decoration: underline;
+    display:flex;
+    justify-content: center;
+}
+
+.etiqueta {
+    display: flex;
+    align-items: center;
+    margin: 1%;    
+    margin-bottom: 15px;
+}
+
+.etiqueta label {
+    margin-right: 2%;  
+}   
+
+.input {
+    background-color: #C7D989; 
+    border-radius: 5px;    
+    display: block;
+    width: 100%; 
+    margin-top: 5px;
+    font-size: 1.2em;  
+}
+
+.etiqueta p {
+    display: flex;
+    flex-direction: row;
+    row-gap: 4px;    
+} 
+
+.boton {
+    background-color: #C7D989;
+    margin-left: 15%;
+    width: auto;
+    height: 20%;
+    border-radius: 5px;
+    border: 1px solid #730237;
+    color: #730237;
+    font-size: 1.5em;    
+    margin-top: 10px; 
+    padding: 1%;
+}
+
+.boton:hover {
+    background-color: #730237;
+    border: 1px solid #C7D989;
+    color: #C7D989;
+    cursor:pointer;
+}
+
+.mapa {
+    display: flex;
+    justify-content:center;
+    margin-left: 25%;    
+    border-radius: 5px;   
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    height: auto;
+
+}
+
+
+.error { color: red; }
